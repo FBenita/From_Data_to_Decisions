@@ -173,7 +173,7 @@ if __name__ == "__main__":
             budget_results.append({'Budget': budget, 'City': 'Phnom Penh', **pp_counts})
         budget_df_melted = pd.DataFrame(budget_results).melt(id_vars=['Budget', 'City'], var_name='Policy Group', value_name='Number of Policies')
         
-        # --- ADDED THIS LINE TO SAVE THE DATA ---
+        # --- SAVE THE DATA ---
         budget_df_melted.to_csv('budget_sensitivity_data.csv', index=False)
         print("   -> Saved budget sensitivity data to 'budget_sensitivity_data.csv'")
 
@@ -197,11 +197,11 @@ if __name__ == "__main__":
             cost_results.append({'Multiplier': f"{mult}x", 'City': 'Phnom Penh', **pp_counts})
         cost_df_melted = pd.DataFrame(cost_results).melt(id_vars=['Multiplier', 'City'], var_name='Policy Group', value_name='Number of Policies')
 
-        # --- ADDED THIS LINE TO SAVE THE DATA ---
+        # --- SAVE THE DATA ---
         cost_df_melted.to_csv('cost_sensitivity_data.csv', index=False)
         print("   -> Saved cost sensitivity data to 'cost_sensitivity_data.csv'")
 
         # --- Step 6: Plotting ---
-        # (Your plotting code remains the same)
-        print("\n3. Generating Plots...")
+             print("\n3. Generating Plots...")
         # ...
+
