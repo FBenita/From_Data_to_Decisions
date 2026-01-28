@@ -1,6 +1,6 @@
 This repository contains the dataset and the code necessary to reproduce the results in the paper:
 
-From Data to Decisions: A Need-Weighted Optimization Framework for Evidence-Based Urban Planning
+**Benita, F. (2026).** *From Data to Decisions: A Need-Weighted Optimization Framework for Evidence-Based Urban Planning*. 
 
 ## Project Structure
 - `notebooks/`: Jupyter Notebooks containing the robustness tests, knapsack optimization, and multi-objective Pareto analysis.
